@@ -1,0 +1,17 @@
+{
+  "name": "dev.unlockedstudios.dependencyresolver",
+  "version": "1.0.0",
+  "displayName": "Game Object Dependency Resolver",
+  "description": "A tool made to resolve game object dependencies.",
+  "unity": "2022.3",
+  "keywords": [
+    "unlockedstudios",
+    "dependencyresolver",
+	"Dependency Resolver",
+    "Dependency Injection",
+	"dependencyinjection"
+  ],
+  "author": {
+    "name": "Developers: Fuzzy, Supporters: Ron, Hooch"
+  }
+}

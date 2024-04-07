@@ -46,6 +46,10 @@ ExportedObj/
 *.tmp
 *.user
 *.userprefs
+.idea/
+upm-ci~/
+obj/
+.DS_Store
 *.pidb
 *.booproj
 *.svd
@@ -79,6 +83,8 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/**/*.api
+Assets/**/*.api.meta
 
 # FMOD
 Assets/Plugins/FMOD/Cache/
