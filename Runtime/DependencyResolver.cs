@@ -133,7 +133,7 @@ namespace UnlockedStudios.DependencyResolver
         {
             DiContainer di = _diContainers.First(x => x.SceneName == sceneName);
             var obj = di.GetService<TService>(sceneName);
-            if (obj != null && obj.Equals(null))
+            if (obj != null && obj.Equals(null) == false)
                 return (TService)obj;
 
             throw new UnityException($"Service { typeof(TService).ToString() } is not registered.");
