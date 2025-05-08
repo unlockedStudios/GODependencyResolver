@@ -1,6 +1,6 @@
 {
   "name": "dev.unlockedstudios.dependencyresolver",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Game Object Dependency Resolver",
   "description": "A tool made to resolve game object dependencies.",
   "unity": "2022.3",
