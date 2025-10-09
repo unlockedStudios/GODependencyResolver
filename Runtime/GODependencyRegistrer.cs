@@ -7,8 +7,7 @@ namespace UnlockedStudios.DependencyResolver
 
         public static void Initialize()
         {
-            if (_dependencyResolver == null)
-                _dependencyResolver = new DependencyResolver();
+            _dependencyResolver = new DependencyResolver();
         }
 
         public static void CreateSceneContainer(string sceneName)
@@ -80,6 +79,16 @@ namespace UnlockedStudios.DependencyResolver
         public static TService GetService<TService>(string sceneName)
         {
             return _dependencyResolver.GetService<TService>(sceneName);
+        }
+
+        public static void ClearAll()
+        {
+            _dependencyResolver.ClearAll();
+        }
+
+        public static void Dispose()
+        {
+            _dependencyResolver = null;
         }
     }
 }

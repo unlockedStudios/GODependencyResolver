@@ -13,7 +13,7 @@ namespace UnlockedStudios.DependencyResolver
 
         private List<DiContainer> _diContainers;
 
-        private string defaultContainer = "defaultContainer";
+        private const string defaultContainer = "defaultContainer";
 
         public DependencyResolver()
         {
@@ -137,6 +137,12 @@ namespace UnlockedStudios.DependencyResolver
                 return (TService)obj;
 
             throw new UnityException($"Service { typeof(TService).ToString() } is not registered.");
+        }
+
+        public void ClearAll()
+        {
+            _diContainers.Clear();
+            _serviceDescriptors.Clear();
         }
     }
 }
